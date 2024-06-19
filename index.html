@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisheet Patel</title>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XQCZC02BQE"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XQCZC02BQE');
+</script>
+<body>
+    Redirecting to <span id="website"></span>
+</body>
+<script>
+    var hash = window.location.hash;
+    function redirect(link) {
+        document.getElementById("website").innerHTML = link;
+        window.location.replace(link);
+    }
+    if (hash.split("#")[1] == "redirect") {
+        switch (hash.split("#")[2]) {
+            case "website":
+                redirect("https://github.com/Nisheet-Patel");
+                break;
+            case "telegram":
+                redirect("https://t.me/nisheetpatel");
+                break;
+            default:
+                break;
+        }
+    }
+</script>
+</html>
